@@ -1,0 +1,33 @@
+section{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("./img/bg-masthead.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+
+    nav{
+        @include flex(space-between);
+        color: $semi-white;
+        font-weight: 700;
+        padding: 1rem 0;
+    
+        ul{
+    
+    @include flex(space-between); 
+    list-style: none;
+  
+li{
+    margin: 0 1rem;
+ 
+  
+   a{
+    color: $semi-white;
+    text-decoration: none;
+    &:hover{
+        color: $orange;
+    }
+   }
+}}
+    }
+}
+

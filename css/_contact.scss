@@ -1,0 +1,32 @@
+.contact{
+   @include flex(center);
+   text-align: center;
+   margin-top: 3rem;
+   .divider{
+    @extend %divider;
+    color: $orange
+   }
+   .inputs{
+    @include flex(center);
+    flex-direction: column;
+  input{
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .message-input{
+    height: 200px;
+  }
+  .btn{
+    @extend %btn;
+    color: $white;
+    background-color: $orange;
+  }
+  .contact-us{
+    margin-top: 1rem;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+   }
+}

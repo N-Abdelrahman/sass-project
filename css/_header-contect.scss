@@ -1,0 +1,26 @@
+.header-contect{
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    margin: 5rem auto;
+    font-family: sans-serif;
+h1{
+    color: $white;
+    text-transform: uppercase;
+}
+h4{
+    color: $semi-white;
+}
+.divider{
+    @extend %divider;
+    color: $orange;
+ 
+ }
+ .btn{
+   @extend %btn;
+   background-color: $orange;
+   color: $white;
+
+ }
+
+}

@@ -1,0 +1,57 @@
+.thumb{
+    width: 100%;
+    .cards{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+  
+
+    }
+
+    .lower-cards{
+        display: flex;
+        flex-direction: row; 
+    }
+    
+    img{
+        width: 100%;
+        opacity: 0.7;
+        
+    }
+}
+
+
+.type{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: none;
+    
+}
+.card:hover .type{
+    display: block;
+}
+.card:hover{
+    background-color: $orange;
+    opacity: 1;
+    cursor: pointer;
+}
+.download{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: $download-color;
+    font-family: sans-serif;
+    padding: 5rem 0;
+    color: $white;
+  
+    .btn{
+    @extend %btn;
+    background-color: $white;
+    color: $black;
+    
+    }
+}

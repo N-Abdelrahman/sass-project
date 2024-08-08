@@ -1,0 +1,30 @@
+.services{
+    text-align: center;
+    align-items: center;
+    margin: 2rem auto;
+   
+    h1{
+        color: $black;
+      
+    }
+    p{
+       opacity: 0.8;
+       font-family: sans-serif;
+    }
+    .divider{
+        @extend %divider;
+        color: $orange;
+
+    }
+    .all-services{
+        @include flex(space-between);
+        margin-top: 3rem;
+      .num{
+        width:22%;
+        .icon{
+            color: $orange;
+        }
+
+      }  
+    }
+}
